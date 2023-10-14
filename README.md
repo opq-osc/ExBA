@@ -10,7 +10,7 @@ Blue Archive 风格图制作器
 
 ## Preview
 
-<img src="https://cdn.jsdelivr.net/gh/fz6m/Private-picgo@moe-2021/img/20231014102319.jpg" width="30%" />
+<img src="https://cdn.jsdelivr.net/gh/fz6m/Private-picgo@moe-2021/img/20231014102319.jpg" width="45%" />
 
 <details>
 <summary>查看更多预览图</summary>
@@ -85,7 +85,7 @@ canvas_binary_host_mirror=https://registry.npmmirror.com/-/binary/canvas
 4. 修改 `node/src/draw.ts` 中的 `1` 处代码:
 
     ```diff
-    -loadFonts()
+    - loadFonts()
     ```
 
 5. 重启 mahiro ，再次尝试。

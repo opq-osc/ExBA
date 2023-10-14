@@ -1,0 +1,17 @@
+{
+  "name": "exba",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "format": "biome format --write --verbose ./node ./mahiro"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.2.2",
+    "@types/node": "^20.8.5",
+    "@xn-sakina/mental": "^4.0.2",
+    "tsx": "^3.13.0",
+    "typescript": "^5.2.2",
+    "vitest": "^0.34.6",
+    "zx": "^7.2.3"
+  }
+}

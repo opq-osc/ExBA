@@ -1,0 +1,14 @@
+{
+  "name": "exba-mahiro",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "exba-node": "workspace:*"
+  },
+  "devDependencies": {
+    "mahiro": "^14.0.3"
+  },
+  "peerDependencies": {
+    "mahiro": ">=14"
+  }
+}

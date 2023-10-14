@@ -1,0 +1,20 @@
+{
+  "name": "exba-node",
+  "private": true,
+  "version": "1.0.0",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "vitest run",
+    "build:logo": "DEBUG_EXBA=1 DEBUG_LOGO=1 pnpm tsx ./test/render.ts",
+    "test:render": "DEBUG_EXBA=1 pnpm tsx ./test/render.ts"
+  },
+  "dependencies": {
+    "canvas": "^2.11.2",
+    "fabric": "^5.3.0",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "@types/fabric": "^5.3.4",
+    "@types/lodash": "^4.14.199"
+  }
+}

@@ -1,0 +1,5 @@
+/test/transform*.ts
+/test/logo
+/test/fixtures
+/src/assets/fonts/R.otf
+/src/assets/fonts/R*.otf

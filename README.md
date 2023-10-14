@@ -37,7 +37,7 @@ Blue Archive 风格图制作器
 ```ts
 import { draw } from 'exba-node'
 //                   ^ workspace name
-//                   relative path: './node/src'
+//                     relative path: './node/src'
 
 await draw({
   output,

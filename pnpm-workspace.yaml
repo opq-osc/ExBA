@@ -1,4 +1,5 @@
 packages:
  - ./node
  - ./mahiro
+ - ./server
  

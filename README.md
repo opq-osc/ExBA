@@ -53,6 +53,14 @@ or
   #            -l            -r                -o
 ```
 
+#### Server
+
+```bash
+  cd ./server
+  PORT=9527 pnpm start
+  # GET http://localhost:9527/api/v1/exba?left=Blue&right=Archive
+```
+
 ### Mahiro Plugin
 
 [mahiro](https://github.com/opq-osc/mahiro) 直接导入插件使用，其他渠道自行提取核心逻辑：

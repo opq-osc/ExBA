@@ -26,6 +26,11 @@ export interface IExBaOptions {
    * only support `jpg` and `png` format
    */
   output: string
+  /**
+   * generate stream
+   * @default false
+   */
+  stream?: boolean
 }
 
 const assetsRoot = join(__dirname, './assets')
@@ -119,6 +124,7 @@ export const draw = async (opts: IExBaOptions) => {
   const {
     text: { left, right },
     output,
+    stream = false
   } = opts
 
   const ext = parse(output).ext?.slice(1) as EFormat | undefined
@@ -453,6 +459,11 @@ export const draw = async (opts: IExBaOptions) => {
   canvas.setViewportTransform([1, 0, 0, 1, -1 * (padding.leftTrim * scale), 0])
   // render
   canvas.renderAll()
+
+  if (stream) {
+    // @ts-expect-error
+    return canvas.createJPEGStream()
+  }
 
   // write
   let resolve: () => void

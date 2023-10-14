@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "main": "src/index.ts",
   "scripts": {
+    "render": "pnpm tsx ./test/cli.ts",
     "test": "vitest run",
     "build:logo": "DEBUG_EXBA=1 DEBUG_LOGO=1 pnpm tsx ./test/render.ts",
     "test:render": "DEBUG_EXBA=1 pnpm tsx ./test/render.ts"

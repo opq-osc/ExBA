@@ -32,6 +32,29 @@ Blue Archive 风格图制作器
   pnpm i
 ```
 
+### API
+
+```ts
+import { draw } from 'exba-node'
+//                   ^ workspace name
+//                   relative path: './node/src'
+
+await draw({
+  output,
+  text: { left, right }
+})
+```
+
+or
+
+```bash
+  cd ./node
+  pnpm render --left "Blue" --right "Archive" --output ./output.jpg
+  #            -l            -r                -o
+```
+
+### Mahiro Plugin
+
 [mahiro](https://github.com/opq-osc/mahiro) 直接导入插件使用，其他渠道自行提取核心逻辑：
 
 ```ts
@@ -42,7 +65,7 @@ import { ExBA } from './mahiro'
 mahiro.use(ExBA())
 ```
 
-### Trigger
+#### Trigger
 
 触发命令格式：
 

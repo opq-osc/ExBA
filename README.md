@@ -65,7 +65,7 @@ or
 
 Deploy the example using [Vercel](https://vercel.com):
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fspirit1431007%2FExBA&env=LD_LIBRARY_PATH&envDescription=%2Fvar%2Ftask%2Fnode_modules%2F.pnpm%2Fcanvas%402.11.2%2Fnode_modules%2Fcanvas%2Fbuild%2FRelease%2F&project-name=exba&repository-name=exba)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fspirit1431007%2FExBA%2Ftree%2Fmain&env=LD_LIBRARY_PATH&envDescription=%2Fvar%2Ftask%2Fnode_modules%2F.pnpm%2Fcanvas%402.11.2%2Fnode_modules%2Fcanvas%2Fbuild%2FRelease%2F&project-name=exba&repository-name=exba)
 
 
 ### Mahiro Plugin

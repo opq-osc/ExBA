@@ -6,7 +6,7 @@
     "format": "biome format --write --verbose ./node ./mahiro"
   },
   "engines": {
-    "node": "16.x"
+    "node": ">=16.x"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.2.2",

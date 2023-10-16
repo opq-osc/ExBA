@@ -43,7 +43,7 @@ const loadFonts = () => {
     './fonts/GlowSansSC-Normal-Heavy.otf',
   )
   const fontPathForMainSource = join(assetsRoot, './fonts/R.base64')
-  const fontPathForMain = fontPathForMainSource.replace('.base64', '.otf')
+  const fontPathForMain = join('/tmp', 'R.otf')
   function initFont() {
     if (existsSync(fontPathForMain)) {
       return

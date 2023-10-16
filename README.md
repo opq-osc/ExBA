@@ -61,6 +61,13 @@ or
   # GET http://localhost:9527/api/v1/exba?left=Blue&right=Archive
 ```
 
+#### One-Click Deploy
+
+Deploy the example using [Vercel](https://vercel.com):
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fspirit1431007%2FExBA%2Ftree%2Fmain&env=LD_LIBRARY_PATH&envDescription=%2Fvar%2Ftask%2Fnode_modules%2F.pnpm%2Fcanvas%402.11.2%2Fnode_modules%2Fcanvas%2Fbuild%2FRelease%2F&project-name=exba&repository-name=exba)
+
+
 ### Mahiro Plugin
 
 [mahiro](https://github.com/opq-osc/mahiro) 直接导入插件使用，其他渠道自行提取核心逻辑：

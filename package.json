@@ -8,6 +8,7 @@
   "devDependencies": {
     "@biomejs/biome": "^1.2.2",
     "@types/node": "^20.8.5",
+    "@vercel/node": "^3.0.7",
     "@xn-sakina/mental": "^4.0.2",
     "tsx": "^3.13.0",
     "typescript": "^5.2.2",

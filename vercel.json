@@ -1,19 +1,16 @@
 {
-  "version": 2,
+  "regions": ["hkg1"],
   "builds": [
     {
-      "src": "vercel_app/index.ts",
+      "src": "vercel/api/exba.ts",
       "use": "@vercel/node"
     }
   ],
   "routes": [
     {
-      "handle": "filesystem"
-    },
-    {
-      "src": "/api(.*)",
-      "dest": "vercel_app/index.ts",
-      "check": true
+      "src": "/api/exba",
+      "dest": "vercel/api/exba.ts",
+      "methods": ["GET"]
     }
   ]
 }

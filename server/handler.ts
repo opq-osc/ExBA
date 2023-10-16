@@ -1,7 +1,8 @@
-import { draw } from '../node/src/draw'
+import type { VercelApiHandler } from '@vercel/node'
+import { draw } from 'exba-node'
 
 const pluginName = `ExBA`
-export default async function (req: any, res: any) {
+export const handler: VercelApiHandler = async (req, res) => {
   try {
     const left = req.query?.left
     const right = req.query?.right
@@ -40,5 +41,4 @@ export default async function (req: any, res: any) {
       msg: 'render error',
     })
   }
-
 }

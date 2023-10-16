@@ -43,7 +43,9 @@ const loadFonts = () => {
     './fonts/GlowSansSC-Normal-Heavy.otf',
   )
   const fontPathForMainSource = join(assetsRoot, './fonts/R.base64')
-  const fontPathForMain = join('/tmp', 'R.otf')
+  const fontPathForMain = process.env.VERCEL
+    ? join('/tmp', 'R.otf')
+    : fontPathForMainSource.replace('.base64', '.otf')
   function initFont() {
     if (existsSync(fontPathForMain)) {
       return
@@ -124,7 +126,7 @@ export const draw = async (opts: IExBaOptions) => {
   const {
     text: { left, right },
     output,
-    stream = false
+    stream = false,
   } = opts
 
   const ext = parse(output).ext?.slice(1) as EFormat | undefined

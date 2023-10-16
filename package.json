@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "scripts": {
-    "format": "biome format --write --verbose ./node ./mahiro"
+    "format": "biome format --write --verbose ./node ./mahiro ./server ./vercel"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.2.2",

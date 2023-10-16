@@ -121,6 +121,26 @@ canvas_binary_host_mirror=https://registry.npmmirror.com/-/binary/canvas
 
 5. 重启 mahiro ，再次尝试。
 
+## Deploy to Vercel
+
+### 一键部署
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fopq-osc%2FExBA&env=VERCEL_FORCE_NO_BUILD_CACHE,LD_LIBRARY_PATH&envDescription=LD_LIBRARY_PATH%3D%2Fvar%2Ftask%2Fnode_modules%2F.pnpm%2Fcanvas%402.11.2%2Fnode_modules%2Fcanvas%2Fbuild%2FRelease%2F&project-name=exba&repository-name=exba)
+
+确保以下配置：
+
+1. 环境变量 `VERCEL_FORCE_NO_BUILD_CACHE=1`
+
+2. 环境变量 `LD_LIBRARY_PATH=/var/task/node_modules/.pnpm/canvas@2.11.2/node_modules/canvas/build/Release/`
+
+3. 使用 `16.x` 的 Nodejs （ reason [vercel/discussions/3061](https://github.com/orgs/vercel/discussions/3061#discussioncomment-6315667) / [vercel/discussions/2867](https://github.com/orgs/vercel/discussions/2867) ）
+
+访问示例：
+
+```ts
+  GET https://exba.vercel.app/api/exba?left=Blue&right=Archive
+```
+
 ## Thanks / Inspiration
 
 - [bluearchive-logo](https://github.com/nulla2011/bluearchive-logo)

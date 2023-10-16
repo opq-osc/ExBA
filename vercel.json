@@ -1,0 +1,16 @@
+{
+  "regions": ["hkg1"],
+  "builds": [
+    {
+      "src": "vercel/api/exba.ts",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/exba",
+      "dest": "vercel/api/exba.ts",
+      "methods": ["GET"]
+    }
+  ]
+}

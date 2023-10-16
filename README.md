@@ -123,17 +123,19 @@ canvas_binary_host_mirror=https://registry.npmmirror.com/-/binary/canvas
 
 ## Deploy to Vercel
 
-### 一键部署
+### 一键创建
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fopq-osc%2FExBA&env=VERCEL_FORCE_NO_BUILD_CACHE,LD_LIBRARY_PATH&envDescription=LD_LIBRARY_PATH%3D%2Fvar%2Ftask%2Fnode_modules%2F.pnpm%2Fcanvas%402.11.2%2Fnode_modules%2Fcanvas%2Fbuild%2FRelease%2F&project-name=exba&repository-name=exba)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fopq-osc%2FExBA&env=LD_LIBRARY_PATH&envDescription=LD_LIBRARY_PATH%3D%2Fvar%2Ftask%2Fnode_modules%2F.pnpm%2Fcanvas%402.11.2%2Fnode_modules%2Fcanvas%2Fbuild%2FRelease%2F&project-name=exba&repository-name=exba)
 
-确保以下配置：
+创建成功后，修改设置：
 
 1. 环境变量 `VERCEL_FORCE_NO_BUILD_CACHE=1`
 
 2. 环境变量 `LD_LIBRARY_PATH=/var/task/node_modules/.pnpm/canvas@2.11.2/node_modules/canvas/build/Release/`
 
-3. 使用 `16.x` 的 Nodejs （ reason [vercel/discussions/3061](https://github.com/orgs/vercel/discussions/3061#discussioncomment-6315667) / [vercel/discussions/2867](https://github.com/orgs/vercel/discussions/2867) ）
+3. 修改为使用 `16.x` 的 Nodejs （ reason [vercel/discussions/3061](https://github.com/orgs/vercel/discussions/3061#discussioncomment-6315667) / [vercel/discussions/2867](https://github.com/orgs/vercel/discussions/2867) ）
+
+之后重新部署（构建记录中 Redeploy 或自行 commit 触发一次构建）
 
 访问示例：
 

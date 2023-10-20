@@ -4,6 +4,14 @@
 
 # ExBA
 
+<div align="center">
+
+### ❗️EOL
+
+项目可正常运作，但不再提供维护，如有自定义需求可 fork 使用
+
+</div>
+
 Blue Archive 风格图制作器
 
 </div>
